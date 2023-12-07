@@ -1,0 +1,422 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+
+.sidebar{
+    background-color: #000;
+    width: 340px;
+    margin-right: 0.5rem;
+}
+
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    height: 45px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+    height: 45px;
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    justify-content: center;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1rem;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+
+
+/* =========================== box style =========================== */
+
+.box{
+    background-color: #232323;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.box-p2{
+    font-size: 0.95rem;
+}
+
+.badge{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 100px;
+    padding: 0.8rem 1rem 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 700;
+    transform: 0.5s;
+    cursor: pointer;
+}
+
+.badge:hover{
+    font-size: 1.05rem;
+}
+
+
+.dark-badge{
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transform: 0.5s;
+}
+
+.dark-badge:hover{
+    font-size: 1.05rem;
+}
+
+
+
+
+/* =========================== MAIN CONTENT =========================== */     
+.sticky_nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0 1rem 0;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.sticky-nav-icons img{
+    margin-left: 0.75rem;
+    cursor: not-allowed;
+}
+
+
+.sticky-nav-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.sticky-nav-options div, i{
+    margin-right: 1.3rem;
+    cursor: pointer;
+}
+.sticky-nav-options i:hover{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+/* =========================== CARD DESIGN =========================== */
+
+.card{
+    background-color: #232323;
+    width: 180px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+/* =========================== FOOTER DESIGN =========================== */
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid #fff;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+/* =========================== Media player =========================== */
+
+.music-player{
+    display: flex;
+    align-items: center;
+}
+
+.album{
+    display: flex;
+    width: 25%;
+    padding-left: 1rem;
+    align-items: center;
+    
+}
+
+.album img{
+    height: 70px;
+    border-radius: 5px;
+}
+
+.music-info{
+    margin-left: 1.3rem;
+}
+
+.music-title{
+    font-weight: 600;
+}
+
+
+.music-artist{
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.favourite-icon{
+    margin-left: 1.6rem;
+    opacity: 0.7;
+}
+
+.favourite-icon:hover{
+    margin-left: 1.6rem;
+    opacity: 1;
+    transform: 0.5s;
+}
+
+
+
+.player{
+    width: 50%;
+    align-items: center;
+}
+
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* playback bar design */
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    border-radius: 100px;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+
+.play-btn{
+    height: 0rem;
+}
+
+
+.play-btn img{
+    position: relative;
+    top: 6.5rem;
+    left: 6.5rem;
+    opacity: 0;
+}
+
+
+
+
+
+.card:hover{
+    background-color: #3a3a3a;
+
+}
+
+.card .play-btn img:hover{
+    transition: 0.5s;
+    opacity: 1;
+
+}
+
+
+/* =========================== MEDIA QUERIES =========================== */
+
+@media (max-width: 1000px){
+
+    .sticky_nav .hide{
+        display: none;
+    }
+    
+}
